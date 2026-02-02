@@ -4,33 +4,37 @@
 <meta charset="UTF-8">
 <title>helloooo</title>
 
-<meta property="og:title" content="pleezzz tap this!!(you can zoom also)" />
-<meta property="og:image" content="https://i.ibb.co/vns0dMc/sticker.png" />
+<meta property="og:title" content="pleezzz tap this!! (you can zoom also)" />
 <meta property="og:type" content="website" />
 
 <style>
-.bg-img{
-  position:fixed;
-  top:0;
-  left:0;
-  width:100vw;
-  height:100svh;
-  object-fit:cover;
-  z-index:-1;
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  font-weight:600;
+  overflow:hidden;
 }
 
 .page{
   display:none;
   height:100vh;
+  position:relative;
   text-align:center;
   color:white;
-  padding:20px;
-  background-size:cover;
-  background-position:center;
 }
 
+.active{
+  display:block;
+}
 
-.active{ display:block; }
+.bg-img{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
 
 .center{
   position:absolute;
@@ -63,7 +67,6 @@ button{
 .text{
   margin-top:20px;
   font-size:20px;
-  font-weight:700;
 }
 
 .collage-img{
@@ -75,16 +78,17 @@ button{
 .wish-text{
   margin-top:20px;
   font-size:18px;
-  font-weight:600;
   line-height:1.5;
 }
 </style>
 </head>
 
 <body>
+
 <!-- PAGE 1 -->
 <div class="page active" id="page1">
   <img class="bg-img" src="https://i.ibb.co/whpSJV1T/IMG-20260201-202437.jpg">
+
   <div class="center zoom-in">
     <img src="https://i.ibb.co/vns0dMc/sticker.png" width="220"><br>
     <div class="text">Please tap this!!</div>
@@ -95,6 +99,7 @@ button{
 <!-- PAGE 2 -->
 <div class="page" id="page2">
   <img class="bg-img" src="https://i.ibb.co/whpSJV1T/IMG-20260201-202437.jpg">
+
   <div class="center zoom-in">
     <img id="cake" src="https://i.ibb.co/39cZdCSP/cake.png" width="260"><br>
     <div class="text">Blow the candles ⭐</div>
@@ -107,13 +112,12 @@ button{
   <img class="bg-img" src="https://i.ibb.co/8nMKBbg4/Mandeep-removebg-preview.png">
 
   <div class="center" style="display:flex;flex-direction:column;align-items:center;">
-    <img src="https://i.ibb.co/4n2LL9W/IMG-20260131-144637.jpg" class="collage-img">
-
+    <img src="https://i.ibb.co/4n2LL9VW/IMG-20260131-144637.jpg" class="collage-img">
     <p class="wish-text">
-      Wish uhh a vry vry happiiiiiest b'dayy 💌<br>
+      Wish uhh a vry vry happiiiiiiest b'dayy 💌<br>
       May God always bless uh !!<br>
-      Stay mastikhor as u are , there's no need to change🧿<br>
-      Baki to sab ok h jiiiii🤧👍🏻
+      Stay mastikhor as u are, there's no need to change🧿<br>
+      or Baki to sab ok h jiiii🤧👍🏻
     </p>
   </div>
 </div>
