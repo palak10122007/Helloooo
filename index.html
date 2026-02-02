@@ -9,12 +9,14 @@
 <meta property="og:type" content="website" />
 
 <style>
-body{
-  margin:0;
-  font-family: Arial, sans-serif;
-  font-weight:600;
-  height:100vh;
-  overflow:hidden;
+.bg-img{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100svh;
+  object-fit:cover;
+  z-index:-1;
 }
 
 .page{
@@ -27,17 +29,7 @@ body{
   background-position:center;
 }
 
-#page1{
-  background:url('https://i.ibb.co/whpSJV1T/IMG-20260201-202437.jpg') no-repeat center/cover;
-}
 
-#page2{
-  background:url('https://i.ibb.co/whpSJV1T/IMG-20260201-202437.jpg') no-repeat center/cover;
-}
-
-#page3{
-  background:url('https://i.ibb.co/8nMKBbg4/Mandeep-removebg-preview.png') no-repeat center/contain;
-}
 .active{ display:block; }
 
 .center{
@@ -90,18 +82,19 @@ button{
 </head>
 
 <body>
-
 <!-- PAGE 1 -->
 <div class="page active" id="page1">
+  <img class="bg-img" src="https://i.ibb.co/whpSJV1T/IMG-20260201-202437.jpg">
   <div class="center zoom-in">
     <img src="https://i.ibb.co/vns0dMc/sticker.png" width="220"><br>
-    <div class="text">Please tap this!!!</div>
+    <div class="text">Please tap this!!</div>
     <button onclick="nextPage(2)">Next</button>
   </div>
 </div>
 
 <!-- PAGE 2 -->
 <div class="page" id="page2">
+  <img class="bg-img" src="https://i.ibb.co/whpSJV1T/IMG-20260201-202437.jpg">
   <div class="center zoom-in">
     <img id="cake" src="https://i.ibb.co/39cZdCSP/cake.png" width="260"><br>
     <div class="text">Blow the candles ⭐</div>
@@ -111,14 +104,16 @@ button{
 
 <!-- PAGE 3 -->
 <div class="page" id="page3">
+  <img class="bg-img" src="https://i.ibb.co/8nMKBbg4/Mandeep-removebg-preview.png">
+
   <div class="center" style="display:flex;flex-direction:column;align-items:center;">
-    <img src="https://i.ibb.co/4n2LL9VW/IMG-20260131-144637.jpg" class="collage-img">
+    <img src="https://i.ibb.co/4n2LL9W/IMG-20260131-144637.jpg" class="collage-img">
+
     <p class="wish-text">
-      Wish uhh a vry vry happiiiiiiest b'dayy 💌<br>
+      Wish uhh a vry vry happiiiiiest b'dayy 💌<br>
       May God always bless uh !!<br>
-      Stay mastikhor as u are ,there's no need to change.<br>
-       Baki to sab ok h jiiii🤧👍🏻<br>
-             
+      Stay mastikhor as u are , there's no need to change🧿<br>
+      Baki to sab ok h jiiiii🤧👍🏻
     </p>
   </div>
 </div>
